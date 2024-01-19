@@ -87,6 +87,8 @@ border-width: 2px;
   font-family: 'Josefin Sans', sans-serif;
 }
 
+
+
 /* End Header */
 
 /* Start Intro */
@@ -142,19 +144,9 @@ border-width: 2px;
   color: #000000;
   font-weight: 200;
   font-size: 1.4rem;
-  padding-bottom: 15px;
+  padding-bottom: 25px;
 
 }
-.intro .description button {
-  text-align: center;
-  background-color: #ab8634;
-  padding:20px;
-  border-radius: 15px;
- 
-  color: white;
-  font-family: 'Josefin Sans', sans-serif;
-}
-
 
 /* End Intro */
 
@@ -202,16 +194,6 @@ border-width: 2px;
     transform: rotate(3deg);
 }
 /*  end about*/
-
-.btn {
-  border: none;
-  color: #fff;
-  font-weight: bold;
-  font-size: 16px;
-  cursor: pointer;
-  padding: 12px 23px;
-  border-radius: 4px;
-}
 
 /* Start Services*/
 
@@ -340,16 +322,6 @@ background-repeat: no-repeat;
  
 }
 
-.content-Get .buttonGet{
-  text-align: center;
-  background-color: #ab8634;
-  padding:18px;
-  border-radius: 15px;
-  margin-left: 425px;
-  margin-right: 425px;
-  color: white;
-  font-family: 'Josefin Sans', sans-serif;
-}
 
 
 /*.canvas {
@@ -453,6 +425,7 @@ background-image: linear-gradient(-45deg, #212529 0%, black 20%, #212529 51%, bl
 /* End footer*/
 
 @media screen and (min-width:360px) and (max-width:736px) {
+  /*Global */
   .container {
     width: auto;
     padding-left: 20px;
@@ -462,6 +435,7 @@ background-image: linear-gradient(-45deg, #212529 0%, black 20%, #212529 51%, bl
       .wrapper {
         flex-direction: column;
       }
+
   /* Start Header */
   .header-cont{
     width: auto;
@@ -479,13 +453,18 @@ background-image: linear-gradient(-45deg, #212529 0%, black 20%, #212529 51%, bl
   margin: 0 auto;
 top: 0px;
 background-color: #fdfdfd;
+margin-left: -8px;
+  margin-right: -8px;
 
 }
 
 .header-img{
   width: 30%;
+}
 
-  
+.btn-head{
+ text-align: center;
+ padding-bottom: 40px;
 }
 /* End Header */
 
@@ -494,21 +473,36 @@ background-color: #fdfdfd;
   width: 100%;
 }
  .intro .description {
-  margin-right: 0px;
+  margin-right: 0;
 }
 .intro .description h2,h3 {
 text-align:center;
 }
 
-.intro .description button {
-margin-left:100px;
-
-}
 /* End intro */
 
 /* start about */
+.about .description-about h4 {
+
+  text-align: center;
+  
+}
+
+.about .description-about h2 {
+
+  text-align: center;
+  
+}
+.about .description-about p {
+
+  text-align: center;
+  
+}
+
 .img-about{
     width: 82%;
+    display: inline-block;
+   margin-right: 0;
 
 }
 /*end about */
@@ -516,12 +510,15 @@ margin-left:100px;
 /* start services */
 
 .services{
-margin: 0 auto;
+  margin-left: -8px;
+  margin-right: -8px;
+
 }
 .serv-cont{
 width: auto;
     padding-left: 20px;
     padding-right: 20px;
+    
 }
 .services .grid{
 
@@ -536,15 +533,49 @@ width: auto;
 }
 /* end services */
 
+/* start getintouch */
+.content-Get{
+padding: 30px;
+}
+.content-Get h2{
+  text-align: center;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 35px;
+  margin:0;
+  padding-bottom: 15px;
+  padding-top: 25px;
+  
+}
+.content-Get p{
+  text-align: center;
+  font-size: 18px;
+  margin:0;
+  padding-bottom: 40px;
+}
+
+.btn-get{
+  text-align: center;
+  font-size: 18px;
+  margin:0;
+
+}
+
+/* end getintouch */
+
+
+
 /* startnfooter */
 
 .footer{
-  margin: 0 auto;
+  margin-left: -8px;
+  margin-right: -8px;
+  padding-bottom: 10px;
 }
 .footer-cont{
 width: auto;
     padding-left: 20px;
     padding-right: 20px;
+    
   }
   .footer-grid{
 
@@ -553,10 +584,40 @@ width: auto;
     padding-right: 10px;
       
   }
+
+  .footer-img{
+    width: 80%;
+    padding-bottom: 20px;
+  }
+  
+  .footer p{
+    color: white;
+    text-align: center;
+    
+  }
+  
+  .footer h2{
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+  }
+  
+  .first , .third , .second{
+margin: 0;
+  }
+
+  .footer .footer-grid .second .content{
+    text-align: center;
+  }
+
+  br{
+    display: none;
+  }
+ 
+
+ 
 /* end footer */
 }
-
-
 
 
 @-webkit-keyframes AnimateBG {
